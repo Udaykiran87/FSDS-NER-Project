@@ -1,0 +1,20 @@
+[2022-06-26 17:26:52,892: INFO: data_ingestion]: 
+********************
+[2022-06-26 17:26:52,892: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2022-06-26 17:26:52,898: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-26 17:26:52,898: ERROR: data_ingestion]: 'name'
+Traceback (most recent call last):
+  File "src/NER_data_ingestion/data_ingestion.py", line 49, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/NER_data_ingestion/data_ingestion.py", line 36, in main
+    data_ingestion = DataIngestion(config)
+  File "src/NER_data_ingestion/data_ingestion.py", line 22, in __init__
+    self.dataset_name = config["name"]
+KeyError: 'name'
+[2022-06-26 17:28:02,715: INFO: data_ingestion]: 
+********************
+[2022-06-26 17:28:02,715: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2022-06-26 17:28:02,715: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-26 17:28:35,110: INFO: data_ingestion]: doaraset downloaded at: artifacts\cache_dir
+[2022-06-26 17:28:35,113: INFO: data_ingestion]: >>>>> stage Data Ingestion stage completed!<<<<<
+
